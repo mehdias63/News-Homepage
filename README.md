@@ -23,8 +23,8 @@ This is a solution to the [News homepage component challenge on Frontend Mentor]
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mehdias63/Article-Preview-Component)
-- Live Site URL: [Add live site URL here](https://article-preview-component-green-kappa.vercel.app)
+- Solution URL: [Add solution URL here](https://github.com/mehdias63/News-Homepage)
+- Live Site URL: [Add live site URL here](https://news-homepage-ochre-alpha.vercel.app)
 
 ## My process
 
