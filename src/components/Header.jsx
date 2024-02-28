@@ -3,49 +3,57 @@ import { useState } from "react";
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
-    <div>
-      <div className="">
-        <img src="/images/logo.svg" alt="logo" />
+    <header className="relative flex w-full items-center justify-between">
+      <div className="ml-4 mt-7">
+        <img
+          src="/images/logo.svg"
+          alt="logo"
+          className="w-[2.81106rem] h-[1.75rem] md:w-[4rem] md:h-[2.5rem]"
+        />
       </div>
-      <header className="relative flex w-full items-center justify-between bg-white">
-        <div
-          className={`absolute right-0 top-0 ${mobileOpen ? "open" : ""}`}
-          onClick={() => setMobileOpen((preMobileOpen) => !preMobileOpen)}
-        >
-          {mobileOpen ? (
-            <img
-              src="/images/icon-menu-close.svg"
-              alt="Open"
-              className="md:hidden"
-            />
-          ) : (
-            <img
-              src="/images/icon-menu.svg"
-              alt="Close"
-              className="md:hidden"
-            />
-          )}
-        </div>
-        <nav className={` ${mobileOpen ? "block" : "hidden md:block"}`}>
-          <ul className="md:flex gap-3">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>New</a>
-            </li>
-            <li>
-              <a>Popular</a>
-            </li>
-            <li>
-              <a>Trending</a>
-            </li>
-            <li>
-              <a>Categories</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+      {mobileOpen && (
+        <div className="fixed inset-0 z-10 bg-black opacity-50 md:hidden"></div>
+      )}
+
+      <div
+        className={`relative z-30 ml-auto mr-4 mt-7 block ${
+          mobileOpen ? "open" : ""
+        }`}
+        onClick={() => setMobileOpen((preMobileOpen) => !preMobileOpen)}
+      >
+        {mobileOpen ? (
+          <img
+            src="/images/icon-menu-close.svg"
+            alt="Open"
+            className="md:hidden"
+          />
+        ) : (
+          <img src="/images/icon-menu.svg" alt="Close" className="md:hidden" />
+        )}
+      </div>
+      <nav
+        className={`fixed right-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white md:relative  md:pt-[2.7rem] ${
+          mobileOpen ? "block" : "hidden md:block"
+        }`}
+      >
+        <ul className="flex flex-col gap-6 md:flex-row text-lg leading-6 ">
+          <li>
+            <a className="link">Home</a>
+          </li>
+          <li>
+            <a className="link">New</a>
+          </li>
+          <li>
+            <a className="link">Popular</a>
+          </li>
+          <li>
+            <a className="link">Trending</a>
+          </li>
+          <li>
+            <a className="link">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }

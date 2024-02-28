@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function News({title , text}) {
+export default function News({ title, text }) {
   return (
-    <div>
-        <h1>{title}</h1>
-        <p>{text}</p>
+    <div className="border-b-2 border-gray last:border-none my-6">
+      <h1 className="text-xl font-extrabold leading-6 my-2 link">{title}</h1>
+      <p className="text-[0.9375rem] leading-[1.625rem] mb-6 text-light-gary">
+        {text}
+      </p>
     </div>
-  )
+  );
 }

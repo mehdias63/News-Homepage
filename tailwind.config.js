@@ -3,17 +3,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      pop: ["Poppins"],
+      inter: ["Inter"],
     },
     extend: {
       colors: {
-        pink: "#FF7979",
-        green: "#38CC8B",
-        purple: "#5E54A4",
-        gray: "#BAB7D4",
+        "black": "#00001A",
+        "gray": "#5E607A",
+        "orange":"#F15D51",
+        "yellow":"#E9AA52",
+        "light-gary":"#C5C6CE",
       },
     },
   },
   plugins: [],
 };
-
