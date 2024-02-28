@@ -4,7 +4,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <header className="relative flex w-full items-center justify-between lg:col-span-3">
-      <div className="ml-4 mt-7">
+      <div className="mt-7">
         <img
           src="/images/logo.svg"
           alt="logo"
@@ -16,7 +16,7 @@ export default function Header() {
       )}
 
       <div
-        className={`relative z-30 ml-auto mr-4 mt-7 block ${
+        className={`relative z-30 ml-auto mt-7 block ${
           mobileOpen ? "open" : ""
         }`}
         onClick={() => setMobileOpen((preMobileOpen) => !preMobileOpen)}
@@ -38,19 +38,29 @@ export default function Header() {
       >
         <ul className="flex flex-col gap-6 md:flex-row text-lg leading-6 md:gap-10">
           <li>
-            <a className="link" href="#">Home</a>
+            <a className="link" href="#">
+              Home
+            </a>
           </li>
           <li>
-            <a className="link" href="#">New</a>
+            <a className="link" href="#">
+              New
+            </a>
           </li>
           <li>
-            <a className="link" href="#">Popular</a>
+            <a className="link" href="#">
+              Popular
+            </a>
           </li>
           <li>
-            <a className="link" href="#">Trending</a>
+            <a className="link" href="#">
+              Trending
+            </a>
           </li>
           <li>
-            <a className="link" href="#">Categories</a>
+            <a className="link" href="#">
+              Categories
+            </a>
           </li>
         </ul>
       </nav>
