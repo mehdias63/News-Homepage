@@ -6,10 +6,10 @@ import Card from "./components/Card";
 
 function App() {
   return (
-    <main className=" min-h-screen font-inter p-3 grid grid-cols-1 lg:grid-cols-3 max-w-[90rem] lg:px-[8rem] lg:py-[5rem]">
+    <main className=" min-h-screen font-inter p-3 grid grid-cols-1 lg:grid-cols-3 max-w-[90rem] lg:mx-[10.31rem] lg:py-[5rem]">
       <Header />
       <About />
-      <div className="bg-black text-white my-2 lg:col-span-2 lg:row-start-2 p-6 md:mt-6 lg:ml-5">
+      <div className="bg-black text-white my-2 lg:col-span-2 lg:row-start-2 p-6 md:mt-6 lg:ml-5 lg:mt-10">
         <h1 className="text-yellow text-[2rem] md:text-[2.5rem] font-bold leading-8 md:leading-10 mb-10">
           News
         </h1>
