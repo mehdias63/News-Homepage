@@ -11,7 +11,7 @@ function App() {
       <About />
       <div className="bg-black text-white my-2 lg:col-span-2 lg:row-start-2 p-6 md:mt-6 lg:ml-5 lg:mt-10">
         <h1 className="text-yellow text-[2rem] md:text-[2.5rem] font-bold leading-8 md:leading-10 mb-10">
-          News
+          New
         </h1>
         <News
           title="Hydrogen VS Electric Cars"
