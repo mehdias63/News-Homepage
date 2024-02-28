@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
-    <header className="relative flex w-full items-center justify-between">
+    <header className="relative flex w-full items-center justify-between lg:col-span-3">
       <div className="ml-4 mt-7">
         <img
           src="/images/logo.svg"
@@ -32,25 +32,25 @@ export default function Header() {
         )}
       </div>
       <nav
-        className={`fixed right-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white md:relative  md:pt-[2.7rem] ${
+        className={`fixed right-0 top-0 z-20 h-full w-2/3 pl-6 pt-[9rem] bg-white md:relative md:pt-[2.7rem] md:w-auto md:mr-4 lg:mr-1 ${
           mobileOpen ? "block" : "hidden md:block"
         }`}
       >
-        <ul className="flex flex-col gap-6 md:flex-row text-lg leading-6 ">
+        <ul className="flex flex-col gap-6 md:flex-row text-lg leading-6 md:gap-10">
           <li>
-            <a className="link">Home</a>
+            <a className="link" href="#">Home</a>
           </li>
           <li>
-            <a className="link">New</a>
+            <a className="link" href="#">New</a>
           </li>
           <li>
-            <a className="link">Popular</a>
+            <a className="link" href="#">Popular</a>
           </li>
           <li>
-            <a className="link">Trending</a>
+            <a className="link" href="#">Trending</a>
           </li>
           <li>
-            <a className="link">Categories</a>
+            <a className="link" href="#">Categories</a>
           </li>
         </ul>
       </nav>

@@ -9,7 +9,7 @@ function App() {
     <main className=" min-h-screen font-inter p-3 grid grid-cols-1 lg:grid-cols-3 max-w-[90rem]">
       <Header />
       <About />
-      <div className="bg-black text-white my-2 lg:col-span-2 lg:row-start-2 p-6 md:mt-10">
+      <div className="bg-black text-white my-2 lg:col-span-2 lg:row-start-2 p-6 md:mt-10 md:ml-5">
         <h1 className="text-yellow text-[2rem] md:text-[2.5rem] font-bold leading-8 md:leading-10 mb-10">
           News
         </h1>
